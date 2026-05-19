@@ -4,7 +4,7 @@ import type {
   Language,
   Size
 } from '../types/description';
-
+const API_URL = import.meta.env.VITE_API_URL;
 export const generateDescription = async (
   file: File,
   tone: Tone,
@@ -19,7 +19,7 @@ export const generateDescription = async (
   formData.append('size', size);
 
   const response = await fetch(
-    'http://localhost:3333/generations',
+     `${API_URL}/generations`,
     {
       method: 'POST',
       body: formData,
