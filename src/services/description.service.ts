@@ -4,7 +4,7 @@ import type {
   Language,
   Size
 } from '../types/description';
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.API_URL;
 export const generateDescription = async (
   file: File,
   tone: Tone,
