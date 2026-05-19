@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'motion/react';
 
 export const ContentWrapper = styled.div`
   width: 100%;
