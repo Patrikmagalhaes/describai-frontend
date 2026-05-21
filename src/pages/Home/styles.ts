@@ -72,7 +72,7 @@ export const NavLinks = styled.div`
   letter-spacing: 0.2em;
 
   @media ${media.md} {
-    display: flex;
+    display: none;
   }
 `;
 
